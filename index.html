@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARDE × Grupo ALSEA · Casual Dining — Propuesta de Contenido</title>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="description" content="Propuesta de contenido mensual para Grupo ALSEA · Casual Dining. Chili's · P.F. Chang's · Italianni's · The Cheesecake Factory. Por ARDE Agency.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ardeagency.github.io/alsea-casual-dining-propuesta/">
+<meta property="og:site_name" content="ARDE Agency">
+<meta property="og:title" content="ARDE × Grupo ALSEA — Casual Dining · Propuesta de Contenido">
+<meta property="og:description" content="Un solo motor creativo para 4 marcas. Fee mensual de contenido + campañas especiales. Por ARDE Agency.">
+<meta property="og:image" content="https://ardeagency.github.io/alsea-casual-dining-propuesta/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ARDE × Grupo ALSEA — Casual Dining">
+<meta name="twitter:description" content="Un solo motor creativo para 4 marcas. Fee mensual + campañas especiales.">
+<meta name="twitter:image" content="https://ardeagency.github.io/alsea-casual-dining-propuesta/assets/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f1ece3;--cream-2:#e8e1d4;--ink:#0e0d0b;--ink-soft:#1a1916;
+  --red:#ee3a23;--red-deep:#cf2d18;--muted:#6c665d;--muted-d:#9b9a96;
+  --line:rgba(14,13,11,.14);--line-d:rgba(255,255,255,.14);
+  --sans:'Archivo',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;--display:'Anton',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--ink);color:var(--cream);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--red);color:#fff}
+.prog{position:fixed;top:0;left:0;height:3px;width:0;background:var(--red);z-index:200;transition:width .1s linear}
+.nav{position:fixed;top:0;left:0;right:0;z-index:150;display:flex;justify-content:space-between;align-items:center;padding:18px 40px;mix-blend-mode:difference;pointer-events:none}
+.nav .brand{font-family:var(--sans);font-weight:800;font-size:13px;letter-spacing:.22em;color:#fff}
+.nav .tag{font-family:var(--sans);font-weight:500;font-size:10px;letter-spacing:.28em;color:#fff;opacity:.7;text-transform:uppercase}
+@media(max-width:640px){.nav{padding:14px 20px}.nav .tag{display:none}}
+.glow{position:fixed;border-radius:50%;filter:blur(120px);opacity:.5;z-index:0;pointer-events:none}
+.glow.a{width:520px;height:520px;background:radial-gradient(circle,#ee3a2399,transparent 70%);top:-160px;right:-120px}
+.glow.b{width:600px;height:600px;background:radial-gradient(circle,#ee3a2366,transparent 70%);bottom:10%;left:-200px}
+section{position:relative;z-index:2}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+@media(max-width:640px){.wrap{padding:0 22px}}
+.eyebrow{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--red);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--red);display:inline-block}
+
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:120px 40px 60px;overflow:hidden}
+.hero .wrap{padding:0}
+.hero-meta-top{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted-d);margin-bottom:30px;opacity:0;animation:fade .8s .1s forwards}
+.hero h1{font-family:var(--sans);font-weight:900;line-height:.92;letter-spacing:-.02em;font-size:clamp(46px,9vw,124px);text-transform:uppercase}
+.hero h1 .l{display:inline-block;opacity:0;transform:translateY(40px);animation:drop .7s forwards}
+.hero h1 .red{color:var(--red)}
+.hero-sub{font-size:clamp(16px,2.1vw,22px);color:var(--cream);max-width:640px;margin-top:28px;line-height:1.5;opacity:0;animation:fade 1s 1.1s forwards}
+.hero-sub b{font-weight:700;color:#fff}
+.hero-row{display:flex;gap:38px;flex-wrap:wrap;margin-top:46px;opacity:0;animation:fade 1s 1.35s forwards}
+.hero-row .it .k{font-family:var(--sans);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-d);margin-bottom:7px}
+.hero-row .it .v{font-family:var(--sans);font-weight:700;font-size:15px;color:var(--cream)}
+.scroll-cue{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);font-family:var(--sans);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted-d);opacity:0;animation:fade 1s 1.8s forwards;display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-cue span{width:1px;height:34px;background:linear-gradient(var(--red),transparent);animation:cue 1.6s infinite}
+@keyframes cue{0%{opacity:0;transform:scaleY(.3)}50%{opacity:1}100%{opacity:0;transform:scaleY(1)}}
+@keyframes drop{to{opacity:1;transform:translateY(0)}}
+@keyframes fade{to{opacity:1}}
+
+.marquee{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:14px 0;border-top:1px solid var(--red-deep)}
+.marquee .track{display:inline-block;animation:scroll 30s linear infinite;font-family:var(--sans);font-weight:800;font-size:15px;letter-spacing:.12em;text-transform:uppercase}
+.marquee .track span{margin:0 26px;opacity:.95}
+.marquee .track span.o{opacity:.55}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.cream{background:var(--cream);color:var(--ink)}
+.cream .muted{color:var(--muted)}
+.ink-block{background:#000;color:var(--cream)}
+.block{padding:120px 0}
+@media(max-width:640px){.block{padding:80px 0}}
+.section-head{margin-bottom:56px}
+.section-head h2{font-family:var(--sans);font-weight:900;line-height:.98;letter-spacing:-.02em;font-size:clamp(32px,5.4vw,68px);text-transform:uppercase;margin-top:20px}
+.section-head h2 .red{color:var(--red)}
+.lede{font-size:clamp(17px,2.2vw,21px);line-height:1.6;max-width:700px;margin-top:24px;color:var(--muted)}
+.lede b{color:var(--ink);font-weight:600}
+
+/* reto cols */
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.cols2 p{font-size:clamp(16px,2vw,19px);line-height:1.62;color:var(--muted);margin-bottom:20px}
+.cols2 p b{color:var(--ink);font-weight:600}
+.bigstat{font-family:var(--sans);font-weight:900;text-transform:uppercase;line-height:.95;font-size:clamp(34px,4.6vw,58px);color:var(--red);letter-spacing:-.01em}
+.bigstat small{display:block;font-family:var(--body);font-weight:400;text-transform:none;font-size:16px;color:var(--muted);margin-top:14px;letter-spacing:0;line-height:1.5}
+@media(max-width:760px){.cols2{grid-template-columns:1fr;gap:26px}}
+
+/* model flow */
+.flow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:20px}
+.fcard{border-top:2px solid var(--red);padding-top:22px}
+.fcard .fn{font-family:var(--display);font-size:42px;color:var(--red);line-height:.8}
+.fcard h3{font-family:var(--sans);font-weight:800;font-size:18px;text-transform:uppercase;margin:14px 0 8px}
+.fcard p{font-size:14px;color:var(--muted-d);line-height:1.55}
+.ink-block .fcard h3{color:#fff}
+@media(max-width:760px){.flow{grid-template-columns:1fr;gap:16px}}
+
+/* brands */
+.brands{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px}
+.bcard{position:relative;overflow:hidden;border-radius:8px;aspect-ratio:16/10;background:#000}
+.bcard img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.bcard:hover img{transform:scale(1.06)}
+.bcard::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.78),rgba(0,0,0,.05) 55%)}
+.bcard .bmeta{position:absolute;left:24px;bottom:22px;z-index:2}
+.bcard .bn{font-family:var(--sans);font-weight:900;font-size:clamp(22px,2.6vw,30px);color:#fff;text-transform:uppercase;line-height:1;letter-spacing:-.01em}
+.bcard .bt{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-top:8px}
+@media(max-width:640px){.brands{grid-template-columns:1fr}}
+
+/* content types */
+.ctypes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.ctype{border:1px solid var(--line);border-radius:10px;padding:26px 24px;background:#fff;transition:transform .3s,box-shadow .3s}
+.ctype:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(14,13,11,.1)}
+.ctype .tag{font-family:var(--sans);font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+.ctype h4{font-family:var(--sans);font-weight:800;font-size:17px;text-transform:uppercase;margin:12px 0 8px;color:var(--ink);letter-spacing:-.01em}
+.ctype p{font-size:13px;color:var(--muted);line-height:1.55}
+@media(max-width:760px){.ctypes{grid-template-columns:1fr 1fr}}
+@media(max-width:440px){.ctypes{grid-template-columns:1fr}}
+
+/* fee hero number */
+.feebox{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center;margin-top:10px}
+.feenum{font-family:var(--sans);font-weight:900;font-size:clamp(56px,11vw,120px);color:var(--red);line-height:.85;letter-spacing:-.03em}
+.feenum small{font-size:.28em;color:var(--cream);font-weight:700;vertical-align:super;letter-spacing:0}
+.feelbl{font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-d);margin-top:14px}
+.feedeliv{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.dchip{border:1px solid var(--line-d);border-radius:10px;padding:20px 24px;flex:1;min-width:150px}
+.dchip .dn{font-family:var(--sans);font-weight:900;font-size:34px;color:#fff;line-height:1}
+.dchip .dt{font-size:13px;color:var(--muted-d);margin-top:8px;line-height:1.4}
+.feedesc{font-size:15px;color:var(--muted-d);line-height:1.6}
+.feedesc b{color:#fff;font-weight:600}
+@media(max-width:760px){.feebox{grid-template-columns:1fr;gap:30px}}
+
+/* incluido */
+.benefits{margin-top:34px;border:1px solid var(--red);border-radius:10px;padding:26px 30px;background:rgba(238,58,35,.05)}
+.ben-head{font-family:var(--sans);font-weight:800;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+.ben-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px}
+.ben{font-size:14px;color:var(--cream);line-height:1.45;display:flex;gap:10px;align-items:flex-start}
+.ben span{color:var(--red);font-weight:700;font-size:16px}
+@media(max-width:640px){.ben-grid{grid-template-columns:1fr}}
+.terms{display:flex;gap:40px;flex-wrap:wrap;margin-top:30px;padding-top:26px;border-top:1px solid var(--line-d)}
+.terms .it .k{font-family:var(--sans);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-d);margin-bottom:6px}
+.terms .it .v{font-family:var(--sans);font-weight:700;font-size:15px;color:var(--cream)}
+
+/* special campaigns table */
+.tbl{margin-top:40px;border-top:2px solid var(--red)}
+.trow{display:grid;grid-template-columns:1fr 150px;gap:20px;padding:26px 0;border-bottom:1px solid var(--line);align-items:center}
+.trow .tname{font-family:var(--sans);font-weight:800;font-size:clamp(18px,2.4vw,24px);color:var(--ink);text-transform:uppercase}
+.trow .tsub{font-size:13px;color:var(--muted);margin-top:7px;font-weight:400;font-family:var(--body);line-height:1.5}
+.trow .tamt{font-family:var(--sans);font-weight:900;font-size:clamp(24px,3vw,32px);color:var(--red);text-align:right}
+.trow .tamt small{display:block;font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.1em;margin-top:2px}
+.note{margin-top:26px;font-size:13px;color:var(--muted);line-height:1.6;max-width:680px}
+
+/* why / diff */
+.diff{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+.dcard{border:1px solid var(--line-d);border-radius:10px;padding:30px}
+.dcard .dh{font-family:var(--sans);font-weight:900;font-size:20px;text-transform:uppercase;color:#fff;margin-bottom:6px}
+.dcard .dhr{color:var(--red)}
+.dcard p{font-size:14px;color:var(--muted-d);line-height:1.6}
+@media(max-width:640px){.diff{grid-template-columns:1fr}}
+
+.go{background:var(--red);color:#fff;text-align:center;padding:120px 40px}
+.go h2{font-family:var(--sans);font-weight:900;font-size:clamp(38px,8vw,96px);text-transform:uppercase;line-height:.9;letter-spacing:-.02em}
+.go h2 .ink{color:var(--ink)}
+.go p{font-size:clamp(16px,2vw,20px);max-width:580px;margin:26px auto 0;line-height:1.5;opacity:.95}
+.go .cta{margin-top:40px;display:inline-flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.go .btn{font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;background:var(--ink);color:#fff;padding:16px 34px;border-radius:40px;text-decoration:none;transition:transform .2s}
+.go .btn:hover{transform:translateY(-3px)}
+.go .btn.alt{background:transparent;border:2px solid rgba(255,255,255,.6)}
+
+.foot{background:var(--ink);padding:50px 40px;text-align:center;border-top:1px solid var(--line-d)}
+.foot .logo{height:26px;filter:brightness(0) invert(1);opacity:.85;margin-bottom:18px}
+.foot .fl{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted-d)}
+.foot .fc{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.7}
+.foot .conf{margin-top:18px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);opacity:.7}
+
+.rev{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.rev.in{opacity:1;transform:none}
+.rev.d1{transition-delay:.08s}.rev.d2{transition-delay:.16s}.rev.d3{transition-delay:.24s}.rev.d4{transition-delay:.32s}
+@media(prefers-reduced-motion:reduce){.rev{opacity:1!important;transform:none!important}.hero h1 .l{opacity:1;transform:none;animation:none}}
+</style>
+</head>
+<body>
+<div class="prog" id="prog"></div>
+<div class="glow a"></div><div class="glow b"></div>
+
+<nav class="nav">
+  <div class="brand">ARDE × ALSEA</div>
+  <div class="tag">Casual Dining · Propuesta 2026</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-meta-top">Grupo ALSEA · Casual Dining · Propuesta confidencial</div>
+    <h1 id="heroTitle"></h1>
+    <p class="hero-sub">Un solo motor creativo para <b>4 marcas</b>. Contenido para el día a día de cada marca — <b>cada pieza hecha con preparación y dirección</b> — más campañas especiales para los momentos grandes. <b>AI Craft. Human Vision.</b></p>
+    <div class="hero-row">
+      <div class="it"><div class="k">Cliente</div><div class="v">Grupo ALSEA</div></div>
+      <div class="it"><div class="k">Categoría</div><div class="v">Casual Dining</div></div>
+      <div class="it"><div class="k">Modelo</div><div class="v">Fee mensual + Campañas</div></div>
+      <div class="it"><div class="k">Fecha</div><div class="v">Junio 2026</div></div>
+    </div>
+  </div>
+  <div class="scroll-cue">Desliza<span></span></div>
+</section>
+
+<div class="marquee"><div class="track" id="mq"></div></div>
+
+<!-- RETO -->
+<section class="cream block">
+  <div class="wrap">
+    <div class="section-head rev">
+      <div class="eyebrow">01 · El reto</div>
+      <h2>4 marcas. <span class="red">Un solo motor.</span></h2>
+      <p class="lede">Chili's, P.F. Chang's, Italianni's y The Cheesecake Factory tienen necesidades que <b>cambian cada mes</b>: un mes una marca lanza promo y se lleva el 70% del contenido; otro mes el foco es otro. Un esquema rígido no sirve.</p>
+    </div>
+    <div class="cols2 rev">
+      <div>
+        <p>La solución no es repartir piezas marca por marca. Es tener <b>una sola capacidad de producción</b> que se mueve a donde el mes lo pida.</p>
+        <p>Un aliado, un flujo, un punto de contacto — y contenido fresco para las 4 marcas, siempre.</p>
+      </div>
+      <div>
+        <div class="bigstat">+1,400<small>restaurantes opera Grupo ALSEA en LatAm. Cuatro marcas de Casual Dining que necesitan alimentarse de contenido cada día.</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODELO -->
+<section class="ink-block block">
+  <div class="wrap">
+    <div class="section-head rev">
+      <div class="eyebrow">02 · El modelo</div>
+      <h2 style="color:#fff">Un paquete. <span class="red">Ustedes distribuyen.</span></h2>
+      <p class="lede" style="color:var(--muted-d)">El fee mensual compra una bolsa de contenido. <b style="color:#fff">Alsea decide cómo repartirla</b> entre las 4 marcas según el mes — todo a una marca, o como caiga.</p>
+    </div>
+    <div class="flow">
+      <div class="fcard rev d1"><div class="fn">01</div><h3>Un solo paquete</h3><p>30 fotografías + 4 videos de 30s al mes. Una bolsa, sin asignación fija por marca.</p></div>
+      <div class="fcard rev d2"><div class="fn">02</div><h3>Alsea reparte</h3><p>Cada mes ustedes deciden el peso por marca. Chili's 70%, o todo para un lanzamiento de P.F. Chang's.</p></div>
+      <div class="fcard rev d3"><div class="fn">03</div><h3>Planeación mensual</h3><p>Al inicio de cada mes definimos juntos el foco por marca según calendario, promos y lanzamientos.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARCAS -->
+<section class="cream block">
+  <div class="wrap">
+    <div class="section-head rev">
+      <div class="eyebrow">03 · Qué podemos hacer</div>
+      <h2>Más que fotos. <span class="red">Contenido que da hambre.</span></h2>
+      <p class="lede">Producimos distintos tipos de contenido según lo que cada momento pida — <b>sobre todo en video</b>. Desde el hero shot del producto hasta la gente disfrutándolo en la mesa. Todo con calidad editorial, sin estudio ni sesión física.</p>
+    </div>
+    <div class="brands">
+      <div class="bcard rev"><img src="assets/chilis.jpg" alt="Chili's fajitas"><div class="bmeta"><div class="bn">Chili's</div><div class="bt">Tex-Mex · Grill</div></div></div>
+      <div class="bcard rev d1"><img src="assets/pfchangs.jpg" alt="P.F. Chang's"><div class="bmeta"><div class="bn">P.F. Chang's</div><div class="bt">Asian Kitchen</div></div></div>
+      <div class="bcard rev d1"><img src="assets/italiannis.jpg" alt="Italianni's pasta"><div class="bmeta"><div class="bn">Italianni's</div><div class="bt">Italian</div></div></div>
+      <div class="bcard rev"><img src="assets/cheesecake.jpg" alt="The Cheesecake Factory"><div class="bmeta"><div class="bn">Cheesecake Factory</div><div class="bt">American · Desserts</div></div></div>
+    </div>
+    <div class="ctypes">
+      <div class="ctype rev"><div class="tag">Video</div><h4>Hero shot de producto</h4><p>El platillo en su máximo antojo: vapor, textura, brillo y primerísimos planos.</p></div>
+      <div class="ctype rev d1"><div class="tag">Video</div><h4>Personas degustando</h4><p>El momento real de disfrute en la mesa — la mordida, la reacción, el compartir.</p></div>
+      <div class="ctype rev d2"><div class="tag">Video</div><h4>Preparación en acción</h4><p>El sizzle de la fajita, el corte, el emplatado, la salsa cayendo.</p></div>
+      <div class="ctype rev"><div class="tag">Video</div><h4>Ambiente de restaurante</h4><p>La experiencia: la mesa servida, el lugar, el plan con amigos.</p></div>
+      <div class="ctype rev d1"><div class="tag">Foto</div><h4>Platillo & menú</h4><p>Cada platillo en ficha hiperreal, listo para carta digital, app y redes.</p></div>
+      <div class="ctype rev d2"><div class="tag">Foto</div><h4>Key visual de promo</h4><p>El gancho visual de cada campaña, promoción o temporada.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEE MENSUAL -->
+<section class="ink-block block">
+  <div class="wrap">
+    <div class="section-head rev">
+      <div class="eyebrow">04 · Fee mensual de contenido</div>
+      <h2 style="color:#fff">El día a día <span class="red">de la marca.</span></h2>
+      <p class="lede" style="color:var(--muted-d)">Contenido para alimentar el día a día de las 4 marcas — redes, promos y menú. <b style="color:#fff">Formato directo y ágil</b>, pensado para feed, reels y stories: con dirección, pero sin la escala de una campaña. Volumen constante a una tarifa eficiente.</p>
+    </div>
+    <div class="feebox rev">
+      <div>
+        <div class="feenum" id="feeNum" data-target="8700">$0 <small>USD / mes</small></div>
+        <div class="feelbl">Fee mensual · Casual Dining</div>
+        <div class="feedeliv">
+          <div class="dchip"><div class="dn">30</div><div class="dt">fotografías hiperreales</div></div>
+          <div class="dchip"><div class="dn">4</div><div class="dt">videos de 30 segundos</div></div>
+        </div>
+      </div>
+      <div>
+        <p class="feedesc">Un solo paquete mensual, <b>distribuible entre las 4 marcas</b> como Alsea lo necesite. Mayor peso en fotografía que en video. La capacidad es fija; el reparto lo deciden ustedes.</p>
+      </div>
+    </div>
+
+    <div class="rev" style="margin-top:30px;border-left:3px solid var(--red);padding:8px 0 8px 22px;max-width:820px">
+      <p style="font-size:15px;color:var(--cream);line-height:1.65"><b style="color:#fff">El formato del fee:</b> videos de 30s con <b style="color:#fff">pocas tomas, muy específicas y directas</b> — no una producción de muchas escenas. Más rápido y menos producido que una campaña, pero con la dirección justa para <b style="color:#fff">funcionar perfecto en redes y en el día a día</b>.</p>
+    </div>
+
+    <div class="benefits rev">
+      <div class="ben-head">Incluido sin costo adicional</div>
+      <div class="ben-grid">
+        <div class="ben"><span>＋</span> Kits de marca de las 4 (mes 0): paletas, refs de platillos, tono, do/don'ts</div>
+        <div class="ben"><span>＋</span> Videos en formato reel (9:16) · fotografías en 4:5 y 9:16</div>
+        <div class="ben"><span>＋</span> 2 rondas de ajuste por pieza</div>
+        <div class="ben"><span>＋</span> Rollover: hasta 15% del contenido no usado pasa al mes siguiente</div>
+        <div class="ben"><span>＋</span> Entrega quincenal y un solo punto de contacto</div>
+        <div class="ben"><span>＋</span> Reporte mensual de lo producido</div>
+      </div>
+    </div>
+
+    <div class="terms rev">
+      <div class="it"><div class="k">Contrato</div><div class="v">Mínimo 6 meses</div></div>
+      <div class="it"><div class="k">Pago</div><div class="v">Mensual por adelantado</div></div>
+      <div class="it"><div class="k">Refs de producto</div><div class="v">Provistas por Alsea</div></div>
+      <div class="it"><div class="k">Facturación</div><div class="v">Vía ARDE Agency S.A.S</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPAÑAS ESPECIALES -->
+<section class="cream block">
+  <div class="wrap">
+    <div class="section-head rev">
+      <div class="eyebrow">05 · Campañas especiales</div>
+      <h2>Para los <span class="red">momentos grandes.</span></h2>
+      <p class="lede">Lanzamientos, temporadas o piezas hero. Se cotizan <b>aparte del fee</b>, porque son producciones cinematográficas completas: clonación de producto, dirección creativa, música, locución y reducciones multiformato.</p>
+    </div>
+    <div class="tbl rev">
+      <div class="trow">
+        <div><div class="tname">Video especial · 30 seg</div><div class="tsub">Hero + reducciones multiformato (16:9 · 9:16 · 4:5 · 1:1) · dirección creativa · música y locución</div></div>
+        <div class="tamt">$3,800<small>USD</small></div>
+      </div>
+      <div class="trow">
+        <div><div class="tname">Video especial · 1 min</div><div class="tsub">Hero + reducciones multiformato · dirección creativa · música y locución</div></div>
+        <div class="tamt">$6,300<small>USD</small></div>
+      </div>
+    </div>
+    <p class="note rev">Tarifas alineadas a nuestro price book de producción 2026. <b style="color:var(--ink)">El video del fee es directo</b>: pocas tomas muy específicas, optimizado para redes. <b style="color:var(--ink)">La campaña especial es otra liga</b>: producción cinematográfica de mayor escala — múltiples tomas, narrativa, música, locución, duración extendida y reducciones multiformato, para momentos hero. Los clientes de fee ya tienen los kits de marca listos, lo que facilita cualquier campaña especial.</p>
+  </div>
+</section>
+
+<!-- POR QUÉ ARDE -->
+<section class="ink-block block">
+  <div class="wrap">
+    <div class="section-head rev">
+      <div class="eyebrow">06 · Por qué ARDE</div>
+      <h2 style="color:#fff">Dos mundos, <span class="red">un aliado.</span></h2>
+    </div>
+    <div class="diff">
+      <div class="dcard rev"><div class="dh">Fee <span class="dhr">mensual</span></div><p>Contenido recurrente para el día a día. <b style="color:#fff">Formato directo: videos de 30s con pocas tomas específicas</b>, optimizados para redes. Más rápido y ligero, sin estudio ni sesión física. Funciona perfecto en feed, reels y stories.</p></div>
+      <div class="dcard rev d1"><div class="dh">Campaña <span class="dhr">especial</span></div><p>Pieza cinematográfica hero para lanzamientos y temporadas. <b style="color:#fff">Mayor escala: múltiples tomas, narrativa, música y locución.</b> Producción completa, tarifa premium.</p></div>
+    </div>
+    <p class="lede rev" style="color:var(--muted-d);margin-top:34px">Grupo ALSEA tiene <b style="color:#fff">un solo aliado</b> para los dos mundos: el contenido constante que alimenta el día a día, y las campañas que pegan en los momentos grandes.</p>
+  </div>
+</section>
+
+<!-- GO -->
+<section class="go">
+  <h2>Empecemos<br><span class="ink">el primer mes.</span></h2>
+  <p>Arrancamos con los kits de las 4 marcas y el primer paquete de contenido. Una llamada y damos el primer paso.</p>
+  <div class="cta">
+    <a class="btn" href="https://wa.me/525578652090?text=Hola%2C%20vimos%20la%20propuesta%20de%20contenido%20para%20Grupo%20ALSEA%20Casual%20Dining%20y%20queremos%20avanzar." target="_blank" rel="noopener">Avanzar →</a>
+    <a class="btn alt" href="https://wa.me/525578652090?text=Hola%2C%20queremos%20conversar%20la%20propuesta%20de%20contenido%20para%20Grupo%20ALSEA." target="_blank" rel="noopener">Conversar la propuesta</a>
+  </div>
+</section>
+
+<footer class="foot">
+  <img class="logo" src="assets/arde-logo.png" alt="ARDE">
+  <div class="fl">AI Craft · Human Vision</div>
+  <div class="fc">ARDE Agency S.A.S · Human-Directed AI Studio · Medellín<br>info@ardeagency.com · ardeagency.com</div>
+  <div class="conf">Documento confidencial · Preparado para Grupo ALSEA · Casual Dining · Junio 2026</div>
+</footer>
+
+<script>
+(function(){
+  const title=document.getElementById('heroTitle');
+  const parts=[{t:'GRUPO',cls:''},{t:' ',cls:''},{t:'ALSEA',cls:'red'}];
+  let i=0;
+  parts.forEach(p=>{
+    [...p.t].forEach(ch=>{
+      const s=document.createElement('span');
+      s.className='l '+p.cls;s.style.animationDelay=(0.25+i*0.04)+'s';
+      s.innerHTML=ch===' '?'&nbsp;':ch;title.appendChild(s);i++;
+    });
+    if(p.t!==' ')title.appendChild(document.createElement('br'));
+  });
+  if(title.lastChild&&title.lastChild.tagName==='BR')title.removeChild(title.lastChild);
+})();
+(function(){
+  const mq=document.getElementById('mq');
+  const items=['Casual Dining','Chili’s','P.F. Chang’s','Italianni’s','The Cheesecake Factory','AI Craft · Human Vision'];
+  let html='';
+  for(let k=0;k<2;k++){items.forEach((it,idx)=>{html+=`<span class="${idx%2?'o':''}">${it}</span><span class="o">/</span>`;});}
+  mq.innerHTML=html;
+})();
+window.addEventListener('scroll',()=>{
+  const h=document.documentElement;
+  document.getElementById('prog').style.width=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100+'%';
+},{passive:true});
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+(function(){
+  const el=document.getElementById('feeNum');const target=+el.dataset.target;let done=false;
+  const co=new IntersectionObserver((es)=>{es.forEach(e=>{
+    if(e.isIntersecting&&!done){done=true;const dur=1400,t0=performance.now();
+      function step(t){const p=Math.min((t-t0)/dur,1);const ease=1-Math.pow(1-p,3);
+        el.innerHTML='$'+Math.floor(ease*target).toLocaleString('en-US')+' <small>USD / mes</small>';
+        if(p<1)requestAnimationFrame(step);}
+      requestAnimationFrame(step);}});},{threshold:.5});
+  co.observe(el);
+})();
+</script>
+</body>
+</html>
